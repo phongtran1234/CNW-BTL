@@ -87,7 +87,7 @@
 					</div>
 					<article class="left">
 						<div class="cover">
-							<img src="" alt="">
+							<img id="myImage1" src="./Asses/image/26.jpg" />
 							<h1></h1>
 							<p></p>
 							<p><b></b></p>
@@ -96,7 +96,8 @@
 					</article>
 					<article class="right">
 						<div class="cover">
-							<img src="" alt="">
+							<img id="myImage2" src="image1.jpg" />
+
 							<h1></h1>
 							<p></p>
 							<p><b></b></p>
@@ -130,4 +131,19 @@
 		</footer>
 	</div>
 </body>
+	<script>
+		var imgArray = [src="./Asses/image/26.jpg",src="./Asses/image/27.jpg" ]; // Mảng chứa đường dẫn của các hình ảnh
+var imgIndex = 0; // Chỉ mục của hình ảnh hiện tại
+var imgElement = document.getElementById("myImage1"); // Lấy đối tượng ảnh từ HTML
+
+// Hàm thay đổi ảnh
+function changeImage() {
+  imgIndex = (imgIndex + 1) % imgArray.length; // Tăng chỉ mục và kiểm tra nếu vượt quá kích thước mảng
+  imgElement.src = imgArray[imgIndex]; // Thay đổi đường dẫn ảnh
+}
+
+// Thiết lập thời gian đổi ảnh (ở đây là 2 giây)
+setInterval(changeImage, 2000);
+
+	</script>
 </html>
