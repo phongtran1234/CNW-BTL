@@ -70,19 +70,23 @@ section {
   margin: 0px 250px;
 }
  .intro{
-  padding: 96px 32px;
+  padding: 96px 32px 0px 32px;
   text-align: center;
 }
-
+.intro h1{
+  padding: 0px 17px 17px 17px;
+}
+.intro p{
+  padding: 17px;
+}
+.intro .bistro {
+  padding: 17px;
+}
 article h1 {
     color: rgb(240, 115, 5);
     font-size: 26px;
 }
-article  p{
-  margin: 0px 63px;
-  font-size: 17px;
-  padding:51px 0px;
-}
+
 article  a{
   padding-top: 13px;
   font-size: 14px;
@@ -103,7 +107,55 @@ article img {
 article .imgs {
   padding-bottom: 17px;
 }
+.address {
+  
+ padding: 96px 15%+32px ;
+ background-color: rgb(252, 246, 237);
+}
+.address .info {
+    width: 669px;
+    text-align: center;
+    margin: 0 auto;
+}
+.address .info h1{
+  color: #f07305;
+  font-size: 26px;
+  margin-bottom: 26px;
+}
+.address .info {
+  font-size: 17px;
+  color: rgba(0,0,0,.73);
+}
+.address .covers {
+  display: flex;
+}
+.covers .left {
+  width: 50%;
+}
+.covers .right {
+  width: 50%;
+}
+.covers img {
+  width: 493px;
+  height: 329px;
+}
+.covers img , .cover .coverm {
+  padding: 17px 17px 96px 17px;
+}
 
+.coverm h1 {
+  margin-bottom: 13px;
+}
+.coverm > p {
+  padding-bottom: 34px;
+  margin: 17px 0px;
+  font-size: 17px;
+  color: rgba(0,0,0,.73)
+}
+.coverm > a {
+  margin: 34px 0px;
+
+}
 footer {
   height: 634px;
   text-align: center;
@@ -131,11 +183,11 @@ footer img {
   width: 297px;
   height: 159px;
 }
-footer .icon {
+footer .icons {
   padding: 17px;
   margin-bottom: -20px;
 }
-footer .icon a {
+footer .icons a {
   text-decoration: none;
   color: #fff;
   font-size: 22px;
@@ -145,9 +197,10 @@ footer .icon a {
   border-top: 1px solid rgb(242, 136, 42);
   padding-top: 75px;
 }
-footer .icon:hover a {
+
+footer .icons:hover a {
   color: rgba(255, 255, 255, 0.5);
 }
-footer .icon a:hover {
+footer .icons a:hover {
   color: #fff;
 }
